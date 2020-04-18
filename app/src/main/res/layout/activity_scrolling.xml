@@ -35,52 +35,7 @@
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
-        <!--        <androidx.appcompat.widget.Toolbar
-                    android:id="@+id/toolbar"
-                    android:layout_width="match_parent"
-                    android:layout_height="?attr/actionBarSize"
-                    app:layout_scrollFlags="scroll|enterAlways|snap"
-                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />-->
-
     </com.google.android.material.appbar.AppBarLayout>
-
-    <!--<com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/app_bar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:fitsSystemWindows="true"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <com.google.android.material.appbar.CollapsingToolbarLayout
-            android:id="@+id/toolbar_layout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fitsSystemWindows="true"
-            app:contentScrim="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|enterAlways|snap"
-            app:toolbarId="@+id/toolbar">
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:layout_collapseMode="none"
-                app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-        </com.google.android.material.appbar.CollapsingToolbarLayout>
-
-    </com.google.android.material.appbar.AppBarLayout>-->
-
-    <!--        <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/fab"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/fab_margin"
-                app:layout_anchor="@id/app_bar"
-                app:layout_anchorGravity="bottom|end"
-                app:srcCompat="@android:drawable/ic_dialog_email" />-->
-
-    <!--    <include layout="@layout/content_scrolling" />-->
 
     <EditText
         android:layout_width="match_parent"
@@ -192,19 +147,8 @@
             android:layout_height="0dp"
             android:background="@color/colorPrimaryDark"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            app:layout_constraintTop_toBottomOf="@id/filterFake"
-            app:layout_constraintBottom_toBottomOf="parent">
-
-            <!--
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="@dimen/text_margin"
-                            android:layout_marginTop="@dimen/text_margin"
-                            android:layout_marginRight="@dimen/text_margin"
-                            android:layout_marginBottom="@dimen/text_margin"
-                            android:text="@string/large_text" />
-            -->
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/filterFake">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/imagesRecyclerView"
